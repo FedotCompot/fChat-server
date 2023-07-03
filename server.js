@@ -6,7 +6,7 @@ require("dotenv").config();
 const clientid = process.env.CLIENT_ID;;
 const client_secret = process.env.CLIENT_SECRET;
 
-app.use(express.static('../fChat'));
+app.use(express.static('./fChat'));
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
